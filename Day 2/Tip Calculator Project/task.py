@@ -1,0 +1,13 @@
+print("welcome to the bill splitter")
+total_bill = int(input("Whats  the total bill ?"))
+print(f"The total bill is : {total_bill}")
+the_tip = int(input("What is your desired tip 10 12 15 ?"))
+print(f"The tip is : {the_tip}")
+no_of_people = int(input("How many people do you want to split the bills with ?"))
+print(f"The number of people is : {no_of_people}")
+
+tip = (total_bill * (the_tip / 100))
+total_money = (tip + total_bill)
+print(f"The total money is : {total_money}")
+each_person_bill = (total_money / no_of_people)
+print(f"Each person should pay: {each_person_bill}")
