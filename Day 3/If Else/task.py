@@ -1,7 +1,14 @@
-print("Welcome to the rollercoaster!")
-height = int(input("What is your height in cm? "))
+print("welcome back Victor")
+height = int(input("enter your height: "))
+# print(height)
+if height == 120:
+    age = int(input("enter your age: "))
+    if age < 12 :
+        print("your money is $5")
+    elif age <18:
+        print("your money is $7")
+    else :
+        print("your money is $12")
 
-if height > 140:
-    print("You are alright today.")
 else:
-    print("You are not alright today.")
+    print("cant ride")

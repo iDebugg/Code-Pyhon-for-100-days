@@ -1,25 +1,28 @@
-print("Welcome to the rollercoaster!")
-height = int(input("What is your height in cm? "))
-bill = 0
+print("welcome back Victor")
+height = int(input("enter your height: "))
+# print(height)
+Bill = 0
+if height == 120:
+    age = int(input("enter your age: "))
+    if age < 12 :
+        Bill = 5
+        print("ypur bill is " + str(Bill))
+    elif age <18:
+        Bill = 7
+        print("ypur bill is " + str(Bill))
+    else :
+        Bill = 12
+        print("ypur bill is " + str(Bill))
 
-if height >= 120:
-    print("You can ride the rollercoaster")
-    age = int(input("What is your age? "))
-    if age <= 12:
-        bill =5
-        print("Child tickets are $5.")
-    elif age <= 18:
-        bill = 7
-        print("Youths tickets are $7.")
+    wants_photo = input("Do you want photos, type y for Yes and n for No: ")
+    if wants_photo == "y":
+        total_bills = Bill + 3
+        print("Your total bill is " + str(total_bills))
+    elif wants_photo == "n":
+        total_bills = Bill
+        print("Your total bill is " + str(total_bills))
     else:
-        bill = 12
-        print("Adults tickets are $12.")
-
-        wants_photo = input("Would you like to see the picture? (y/n)")
-        if wants_photo == "y":
-            bill += 3
-
-        print(f"Your final bill is  ${bill}")
+        print("please enter y or n")
 
 else:
-    print("Sorry you have to grow taller before you can ride.")
+    print("cant ride")
